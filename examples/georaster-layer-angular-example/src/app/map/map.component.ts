@@ -28,7 +28,7 @@ export class MapComponent implements AfterViewInit {
       }).addTo(this.map);
   
       // this url is for the Near-Infrared Band
-      const url = "https://landsat-pds.s3.amazonaws.com/c1/L8/045/032/LC08_L1TP_045032_20180811_20180815_01_T1/LC08_L1TP_045032_20180811_20180815_01_T1_B5.TIF";
+      const url = "https://mapedia.co.th/prod/srtm-cog.tif";
       const georaster = await parseGeoRaster(url);
       console.log(georaster);
   
